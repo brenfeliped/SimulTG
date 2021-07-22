@@ -54,7 +54,7 @@ if [[ $castaliaPath ]]; then
 	castaliaDir=${castaliaPath%/*/*}
 	echo "Castalia folder: $castaliaDir"
 	printf "Checking Castalia version..."
-	versionResult=$(head -n 1 "$castaliaDir/VERSION" | grep "Castalia 3.0")
+	versionResult=$(head -n 1 "$castaliaDir/VERSION" | grep "Castalia 3.3")
 	if [[ $versionResult ]] ; then
 		echo "OK!"
 		echo "Version: $versionResult"
